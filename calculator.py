@@ -1,21 +1,21 @@
 # This is a program for basic math calculations
 
 def calculator(option):
-    x = float(input("Enter first number: "))
-    y = float(input("Enter second number: "))
+    number1 = float(input("Enter first number: "))
+    number2 = float(input("Enter second number: "))
 
     if option == 1:
-        sum = (x + y)
-        print("The sum of ", x, "and", y, "is", sum)
+        sum = (number1 + number2)
+        print("The sum of ", number1, "and", number2, "is", sum)
     elif option == 2:
-        sub = (x - y)
-        print("The subtraction of ", x, "and", y, "is", sub)
+        sub = (number1 - number2)
+        print("The subtraction of ", number1, "and", number2, "is", sub)
     elif option == 3:
-        mult = (x * y)
-        print("The multiplication of ", x, "and", y, "is", mult)
+        mult = (number1 * number2)
+        print("The multiplication of ", number1, "and", number2, "is", mult)
     elif option == 4:
-        div = (x / y)
-        print("The division of ", x, "and", y, "is", div)
+        div = (number1 / number2)
+        print("The division of ", number1, "and", number2, "is", div)
     else:
         print("Please enter a valid option.")
 
@@ -23,5 +23,5 @@ print("1 - Addition")
 print("2 - Subtraction")
 print("3 - Multiplication")
 print("4 - Division")
-x = int(input("Select an option: "))
-calculator(x)
+choice = int(input("Select an option: "))
+calculator(choice)
